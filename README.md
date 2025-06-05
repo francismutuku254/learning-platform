@@ -1,3 +1,4 @@
 # Learning Platform
->hello
+\*literal asterisk\*
+
 
