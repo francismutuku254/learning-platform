@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | CBC Tech Learn</title>
+  <link rel="icon" type="image/png" href="img/tech-learn-favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f4f8;
+    }
+
+    .register-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .register-container img.logo {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0 0.5rem;
+      background-color: #fff;
+    }
+
+    .input-wrapper input {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      background: transparent;
+    }
+
+    .input-wrapper i {
+      color: #888;
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.6rem;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+    }
+
+    .extra-links {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .extra-links a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      .register-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <img src="img/tech-learn-favicon.png" alt="Logo" class="logo" />
+    <h2>Create Your Account</h2>
+    <form action="register.php" method="POST" autocomplete="off">
+      <div class="form-group">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Full Name"
+            required
+          />
+          <i class="fa fa-user"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-wrapper">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number (+254)"
+            pattern="\+254[0-9]{9}"
+            title="Phone number must start with +254 followed by 9 digits"
+            required
+          />
+          <i class="fa fa-phone"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="residence"
+            name="residence"
+            placeholder="Residence"
+            required
+          />
+          <i class="fa fa-home"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <i class="fa fa-eye" id="togglePassword1"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+            required
+          />
+          <i class="fa fa-eye" id="togglePassword2"></i>
+        </div>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="extra-links">
+      <p>Already have an account? <a href="login_page.html">Login here</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Toggle password visibility for first password input
+    const togglePassword1 = document.getElementById('togglePassword1');
+    const password1 = document.getElementById('password');
+
+    togglePassword1.addEventListener('click', () => {
+      const type = password1.type === 'password' ? 'text' : 'password';
+      password1.type = type;
+      togglePassword1.classList.toggle('fa-eye');
+      togglePassword1.classList.toggle('fa-eye-slash');
+    });
+
+    // Toggle password visibility for confirm password input
+    const togglePassword2 = document.getElementById('togglePassword2');
+    const password2 = document.getElementById('confirmPassword');
+
+    togglePassword2.addEventListener('click', () => {
+      const type = password2.type === 'password' ? 'text' : 'password';
+      password2.type = type;
+      togglePassword2.classList.toggle('fa-eye');
+      togglePassword2.classList.toggle('fa-eye-slash');
+    });
+  </script>
+</body>
+</html>

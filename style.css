@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color:green;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+
+
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .hero {
+    background: #ecf0f1;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  footer {
+    height: 100px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;    /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    text-align: center;
+  }
+  
+
+
+  nav {
+    background-color: green;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Main Content Styling */
+  .resources-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .resources-content h2,
+  .resources-content h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Resource Cards */
+  .card-box {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .resource-card {
+    background: #ecf0f1;
+    padding: 1rem;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .resource-card:hover {
+    background-color: #d0d7de;
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    margin-bottom: 2rem;
+  }
+  
+  .question-block {
+    margin-bottom: 1rem;
+  }
+  
+  .question-block p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .question-block label {
+    display: block;
+    margin-left: 1rem;
+  }
+  
+  /* Submit Button */
+  #submit-quiz {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #submit-quiz:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Quiz Result */
+  #quiz-result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #16a085;
+  }
+  
+  /* Upcoming Activities */
+  #activities-list {
+    list-style: disc inside;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  /* Menu Section Styling */
+.menu-section {
+    padding: 10px 0;
+}
+
+.menu-section .subtitle {
+    color: #bbb;
+    font-size: 16px; /* Reduced font size */
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Content styles */
+.content {
+    margin-left: 18px;
+    padding: 40px;
+    transition: margin-left 0.3s; /* Transition for content movement */
+    margin-top: 20px;; /* Add space for fixed header */
+    flex-grow: 1; /* Ensures the content takes available space */
+}
+/* Wrapper for horizontal content division */
+.content-wrapper {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: space-between; /* Space between the two sections */
+    /* Align items vertically */
+    gap: 0px; /* Space between the two sections */
+
+}
+
+/* Left section: Text */
+.content-text {
+    flex: 1; /* Take up half of the available space */
+    padding: 20px;
+    height: 500px;
+    width: 650px;
+    
+
+}
+.content-text h1{
+    margin-top: 150px;
+    color: green;
+}
+
+/* Right section: Animation */
+.content2{
+    /* margin-left: 700px; */
+    height: 430px;
+    width: 650px;
+    overflow: hidden;
+   
+}
+
+.sliderframe {
+   
+    width: 650px;
+    height: 430px;
+    display: flex;
+    animation: slide 12s infinite ease-in-out;
+
+  
+    
+
+}
+.slider img{
+    height:430px;
+    width: 650px;
+    position: relative;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    82%{
+        transform: translateX(-300%);
+    }
+}
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1200px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+    .content-text {
+        /* margin-bottom: 20px;  */
+        text-align: center; /* Center align text */
+        /* margin-top: 20px; */
+       
+    }
+    .content-text h1{
+        margin-top: 20px;
+        /* margin-bottom: 40px; */
+    }
+    .content2 {
+        width: 100%; /* Take full width */
+        height: auto; /* Adjust height to content */
+        margin-top: 40px; /* Add some spacing from the text */
+    }
+    .sliderframe {
+        width: 100%; /* Adjust width to container */
+        display: block; /* Make sure images don't slide at the same time */
+        animation: none; /* Disable the sliding animation */
+    }
+    .slider img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For larger screens, keep the original animation */
+@media screen and (min-width: 1201px) {
+    .sliderframe {
+        width: 650px;
+        height: 500px;
+        display: flex;
+        animation: slide 12s infinite ease-in-out;
+    }
+    .slider img {
+        width: 650px;
+        height: 500px;
+    }
+}
+
+  
+ 
+  
