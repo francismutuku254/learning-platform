@@ -12,7 +12,13 @@ Access the project:
 - Admin approval system  
 - File storage with timestamps  
 ## Screenshot  
-![Home](assets/image1.png)
+![Home](assets/image1.png)  
+![Manage](assets/image2.png)  
+![Teacher Dashboard](assets/image3.png)  
+![Analytics](assets/image4.png)
+
+
+
 
 
 
