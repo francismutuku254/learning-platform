@@ -10,7 +10,11 @@ Access the project:
 - Uploading notes (PDF, DOCX, PPT, etc.)  
 - Role-based access (Student, Teacher)  
 - Admin approval system  
-- File storage with timestamps
+- File storage with timestamps  
+## Screenshot  
+
+
+
 
 
 
