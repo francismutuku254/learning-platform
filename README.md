@@ -3,7 +3,7 @@ A simple web-based platform for uploading and accessing educational notes, devel
 
 ## Live Site  
 Access the project:  
-- IP Link: [http://172.203.220.96/learning-platform](http://172.203.220.96/learning-platform)  
+- IP Link: [http://172.203.220.96/learning-platform](http://172.203.220.96/learning-platform/index.php)  
 - Domain (when active): [http://agri.ksef.co.ke](http://agri.ksef.co.ke)  
 ## Features  
 - User registration and login  
